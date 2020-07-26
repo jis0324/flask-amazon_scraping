@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>famazon-famazon</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="loading hide">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <form action="/detail" method="POST" class="col-lg-6 col-md-6 col-sm-8 col-xs-10 my-0 mx-auto">
+    <div class="form-group">
+      <input type="text" class="form-control" id="amazon_url" placeholder="Enter an Amazon product URL" name="amazon_url">
+    </div>
+  </form>
+  <!-- The Modal -->
+  <!-- <div class="modal fade" id="resultModal"> -->
+    <!-- <div class="modal-dialog modal-dialog-centered modal-lg"> -->
+      <!-- <div class="modal-content"> -->
+      
+        <!-- Modal Header -->
+        <!-- <div class="modal-header"> -->
+          <!-- <h2 class="modal-title result-name"></h2> -->
+        <!-- </div> -->
+        
+        <!-- Modal body -->
+        <!-- <div class="modal-body"> -->
+          <!-- <span class="text-center d-block my-3">Ship anywhere to Venezuela for:</span> -->
+          <!-- <h1 class="text-center result-price"></h1> -->
+        <!-- </div> -->
+        
+        <!-- Modal footer -->
+        <!-- <div class="modal-footer"> -->
+          <!-- <button type="button" class="btn btn-primary w-25 d-block" data-dismiss="modal">OK</button> -->
+        <!-- </div> -->
+        
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</html>
