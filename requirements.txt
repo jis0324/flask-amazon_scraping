@@ -16,7 +16,7 @@ html2text==2020.1.16
 html5lib==1.0.1
 idna==2.8
 itsdangerous==1.1.0
-Jinja2==2.10.3
+Jinja2==2.11.3
 lxml==4.5.1
 MarkupSafe==1.1.1
 pathspec==0.7.0
